@@ -86,7 +86,7 @@
         ['The perspective', 'The research considers how regulation, technology and access to feedstocks can influence the development of a lower-carbon aviation fuel market.']
       ],
       tags: ['Industry research', 'Policy analysis', 'Feedstock economics'],
-      link: { href: 'assets/saf-research.pdf', label: 'Read the full report ↗' }
+      availability: 'The full report is currently unavailable.'
     }
   };
 
@@ -116,7 +116,7 @@
     modalContent.innerHTML = `<p class="modal-eyebrow">${escapeText(project.eyebrow)}</p>
       <h2 class="modal-title" id="project-modal-title">${escapeText(project.title)}</h2>
       <p class="modal-description">${escapeText(project.description)}</p>
-      ${blocks}${project.image ? `<img class="wechat-qr" src="${escapeText(project.image)}" alt="Leon’s WeChat QR code">` : ""}${tags ? `<div class="modal-tags" aria-label="Project topics">${tags}</div>` : ""}${action}`;
+      ${blocks}${project.availability ? `<p class="modal-description">${escapeText(project.availability)}</p>` : ''}${project.image ? `<img class="wechat-qr" src="${escapeText(project.image)}" alt="Leon’s WeChat QR code">` : ""}${tags ? `<div class="modal-tags" aria-label="Project topics">${tags}</div>` : ""}${action}`;
     modal.setAttribute('role', 'dialog');
     modal.setAttribute('aria-modal', 'true');
     modal.setAttribute('aria-labelledby', 'project-modal-title');
