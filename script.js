@@ -86,7 +86,7 @@
         ['The perspective', 'The research considers how regulation, technology and access to feedstocks can influence the development of a lower-carbon aviation fuel market.']
       ],
       tags: ['Industry research', 'Policy analysis', 'Feedstock economics'],
-      availability: 'The full report is currently unavailable.'
+      link: { href: 'assets/saf-research.pdf', label: 'Read the full report ↗' }
     }
   };
 
